@@ -9,3 +9,5 @@ nano dockerfile
 #build the image with th tag web-server
 docker build -t web-server .
 
+#to run the container
+docker run web-server
