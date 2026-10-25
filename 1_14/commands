@@ -1,0 +1,6 @@
+docker build -t frontend-env -f Dockerfile.frontend ..
+docker run -d --name my-frontend -p 5001:5001 frontend-env
+
+docker build -t backend-env -f Dockerfile.backend ..
+docker run -d -p 8080:8080 backend-env
+
